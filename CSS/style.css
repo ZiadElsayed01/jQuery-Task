@@ -1,0 +1,122 @@
+/* Home */
+.home {
+  background-image: linear-gradient(
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../Images/events-heavenly-header.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+.menu {
+  background-color: black;
+  position: fixed;
+  width: 0;
+  height: 100%;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  z-index: 1;
+  overflow: hidden;
+}
+.menu a {
+  text-decoration: none;
+  padding: 20px 0;
+  color: white;
+  transition: all 0.3s;
+}
+.menu a:hover {
+  color: #571b1d;
+}
+.menu button {
+  margin-left: auto;
+  margin-top: 20px;
+}
+.home-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btnOpen {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  margin-left: 15px;
+  font-size: 30px;
+}
+/* Duration */
+.duration .box {
+  width: 60%;
+}
+@media (max-width: 992px) {
+  .duration .box {
+    width: 90%;
+  }
+}
+.duration .box .title {
+  background-color: #e07f83;
+}
+.duration .box:first-child .sub-title {
+  display: block;
+}
+.duration .box .sub-title {
+  display: none;
+}
+/* Counter */
+.counter {
+  background-image: linear-gradient(
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../Images/invitation-2508607__340.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.timer {
+  padding: 50px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+/* Contact */
+.contact i {
+  color: #777777;
+}
+.contact .links i {
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 1.5;
+}
+.contact .links i:hover {
+  background-color: #cb2930;
+  color: white;
+}
+.contact form input,
+.contact form textarea {
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.contact form input:focus,
+.contact form textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.contact form .sendBtn {
+  background-color: #cb2930;
+  color: white;
+}
+.contact form span {
+  color: #cb2930;
+}
